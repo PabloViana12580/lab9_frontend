@@ -1,12 +1,16 @@
-import React from 'react'
-import AddPost from '../AddPost'
-import PostList from '../PostList'
+import React from 'react';
 
-const App = () => (
-  <div>
-    <AddPost />
-    <PostList />
+import ChismeList from '../Chismes';
+import ChismeForm from '../NewChisme';
+
+const ChismeApp = () => (
+  <div className="chismeApp">
+    <h1>
+      { 'Los Chismes' }
+    </h1>
+    <ChismeList />
+    <ChismeForm />
   </div>
-)
+);
 
-export default App
+export default ChismeApp;
